@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+        body {
+            background-image: url('./static/images/weather-forecast.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <title>Weather App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"crossorigin="anonymous"></script>
+    
+    <br><br><br><br><br>
+    <input class="form-control mb-3 mx-auto" list="datalistOptions" id="exampleDataList" placeholder="CITY" style="max-width: 18rem; max-height: 8rem;">
+    <datalist id="datalistOptions">
+        <option value="Cleveland">
+        <!-- <option value="New York">
+        <option value="Seattle">
+        <option value="Los Angeles">
+        <option value="Chicago"> -->
+    </datalist>
+    <input class="form-control mb-3 mx-auto" list="datalistOptions" id="exampleDataList" placeholder="ZIP CODE" style="max-width: 18rem; max-height: 8rem;">
+    <datalist id="datalistOptions">
+        <option value="44109">
+            <!-- <option value="New York">-->
+    </datalist>
+
+        <div class="row justify-content-center" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-secondary">SEARCH</button>
+        
+            <div class="btn-group" role="group" >
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    TEMPERATURE
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">Fahrenheit</a>
+                    <a class="dropdown-item" href="#">Celsius</a>
+                    <a class="dropdown-item" href="#">Kelvin</a>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    <br>
+    <div class="card bg-danger mb-3 mx-auto" style="max-width: 18rem; max-height: 8rem;">
+        <div class="card-header text-white ">HIGH TEMP</div>
+        <div class="card-body bg-light ">
+            <h5 class="card-title">xxx</h5>
+        </div>
+    </div>
+    <br>
+    <div class="card bg-primary mb-3 mx-auto" style="max-width: 18rem; max-height: 8rem">
+        <div class="card-header text-white ">LOW TEMP</div>
+        <div class="card-body bg-light ">
+            <h5 class="card-title">xxx</h5>
+        </div>
+    </div>
+    <br>
+    <div class="card bg-secondary mb-3 mx-auto" style="max-width: 18rem; max-height: 8rem">
+        <div class="card-header text-white ">FORECAST</div>
+        <div class="card-body bg-light ">
+            <h5 class="card-title">xxx</h5>
+        </div>
+    </div>
+    <br>
+    <div class="card bg-dark mb-3 mx-auto" style="max-width: 18rem; max-height: 8rem">
+        <div class="card-header text-white ">HUMIDITY</div>
+        <div class="card-body bg-light ">
+            <h5 class="card-title">xxx</h5>
+        </div>
+    </div>
+      
+
+
+    <script src="static/js/main.js"></script>
+    </body>
+    </html>
